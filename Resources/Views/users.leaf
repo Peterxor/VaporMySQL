@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User List</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+            </head>
+    <body class="container">
+        <h1>User List</h1>
+        <form method="POST" action="/users">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Enter your name" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Create</button>
+                        </div>
+                    </div>
+            </form>
+        #for(user in userlist){
+        <p>
+        #(user.username)
+        </p>
+        }
+        </body>
+    </html>
